@@ -16,7 +16,7 @@
 
 package co.cask.db2;
 
-import co.cask.cdap.common.test.TestSuite;
+import io.cdap.cdap.common.test.TestSuite;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;

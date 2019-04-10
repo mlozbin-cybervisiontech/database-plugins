@@ -16,10 +16,10 @@
 
 package co.cask;
 
-import co.cask.cdap.api.data.schema.Schema;
-import co.cask.cdap.api.data.schema.UnsupportedTypeException;
 import com.google.common.base.Strings;
 import com.google.common.collect.Lists;
+import io.cdap.cdap.api.data.schema.Schema;
+import io.cdap.cdap.api.data.schema.UnsupportedTypeException;
 
 import java.io.IOException;
 import java.sql.ResultSet;

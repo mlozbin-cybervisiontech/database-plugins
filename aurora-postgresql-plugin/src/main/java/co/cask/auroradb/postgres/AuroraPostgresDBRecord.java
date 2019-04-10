@@ -18,8 +18,8 @@ package co.cask.auroradb.postgres;
 
 import co.cask.DBRecord;
 import co.cask.SchemaReader;
-import co.cask.cdap.api.data.format.StructuredRecord;
-import co.cask.cdap.api.data.schema.Schema;
+import io.cdap.cdap.api.data.format.StructuredRecord;
+import io.cdap.cdap.api.data.schema.Schema;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

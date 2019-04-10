@@ -16,9 +16,9 @@
 
 package co.cask.db.batch.config;
 
-import co.cask.cdap.api.annotation.Description;
-import co.cask.cdap.api.annotation.Name;
 import co.cask.db.batch.sink.AbstractDBSink;
+import io.cdap.cdap.api.annotation.Description;
+import io.cdap.cdap.api.annotation.Name;
 
 /**
  * Base config class for every database specific sink plugin.

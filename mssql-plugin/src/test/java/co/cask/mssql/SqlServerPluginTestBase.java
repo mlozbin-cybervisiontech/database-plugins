@@ -18,13 +18,6 @@ package co.cask.mssql;
 
 import co.cask.ConnectionConfig;
 import co.cask.DBRecord;
-import co.cask.cdap.api.artifact.ArtifactSummary;
-import co.cask.cdap.api.plugin.PluginClass;
-import co.cask.cdap.api.plugin.PluginPropertyField;
-import co.cask.cdap.datapipeline.DataPipelineApp;
-import co.cask.cdap.proto.id.ArtifactId;
-import co.cask.cdap.proto.id.NamespaceId;
-import co.cask.cdap.test.TestConfiguration;
 import co.cask.db.batch.DatabasePluginTestBase;
 import co.cask.db.batch.sink.ETLDBOutputFormat;
 import co.cask.db.batch.source.DataDrivenETLDBInputFormat;
@@ -32,6 +25,12 @@ import com.google.common.base.Charsets;
 import com.google.common.base.Throwables;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Sets;
+import io.cdap.cdap.api.artifact.ArtifactSummary;
+import io.cdap.cdap.api.plugin.PluginClass;
+import io.cdap.cdap.datapipeline.DataPipelineApp;
+import io.cdap.cdap.proto.id.ArtifactId;
+import io.cdap.cdap.proto.id.NamespaceId;
+import io.cdap.cdap.test.TestConfiguration;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.ClassRule;
@@ -170,12 +169,12 @@ public class SqlServerPluginTestBase extends DatabasePluginTestBase {
   private static void populateData(PreparedStatement... stmts) throws SQLException {
     // insert the same data into both tables: my_table and your_table
     for (PreparedStatement pStmt : stmts) {
-      for (int i = 1; i <= 5; i++) {
+      for (int i = 1; i <= 100000; i++) {
         String name = "user" + i;
         pStmt.setInt(1, i);
         pStmt.setString(2, name);
         pStmt.setString(3, name);
-        pStmt.setShort(4, (short) i);
+        pStmt.setByte(4, (byte) i);
         pStmt.setShort(5, (short) i);
         pStmt.setLong(6, (long) i);
         pStmt.setDouble(7, 123.45 + i);

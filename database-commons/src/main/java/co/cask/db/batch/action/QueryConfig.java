@@ -17,8 +17,8 @@
 package co.cask.db.batch.action;
 
 import co.cask.ConnectionConfig;
-import co.cask.cdap.api.annotation.Description;
-import co.cask.cdap.api.annotation.Macro;
+import io.cdap.cdap.api.annotation.Description;
+import io.cdap.cdap.api.annotation.Macro;
 
 /**
  * Config for Actions running database commands

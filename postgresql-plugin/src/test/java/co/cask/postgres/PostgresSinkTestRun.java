@@ -16,17 +16,17 @@
 
 package co.cask.postgres;
 
-import co.cask.cdap.api.data.format.StructuredRecord;
-import co.cask.cdap.api.data.schema.Schema;
-import co.cask.cdap.api.dataset.table.Table;
-import co.cask.cdap.etl.api.batch.BatchSink;
-import co.cask.cdap.etl.mock.batch.MockSource;
-import co.cask.cdap.etl.proto.v2.ETLPlugin;
-import co.cask.cdap.test.DataSetManager;
 import co.cask.db.batch.sink.AbstractDBSink;
-import co.cask.hydrator.common.Constants;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableSet;
+import io.cdap.cdap.api.data.format.StructuredRecord;
+import io.cdap.cdap.api.data.schema.Schema;
+import io.cdap.cdap.api.dataset.table.Table;
+import io.cdap.cdap.etl.api.batch.BatchSink;
+import io.cdap.cdap.etl.mock.batch.MockSource;
+import io.cdap.cdap.etl.proto.v2.ETLPlugin;
+import io.cdap.cdap.test.DataSetManager;
+import io.cdap.plugin.common.Constants;
 import org.junit.Assert;
 import org.junit.Test;
 

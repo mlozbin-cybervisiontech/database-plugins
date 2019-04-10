@@ -17,9 +17,9 @@
 package co.cask.netezza;
 
 import co.cask.DBRecord;
-import co.cask.cdap.api.data.format.StructuredRecord;
-import co.cask.cdap.api.data.schema.Schema;
 import com.google.common.collect.ImmutableSet;
+import io.cdap.cdap.api.data.format.StructuredRecord;
+import io.cdap.cdap.api.data.schema.Schema;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

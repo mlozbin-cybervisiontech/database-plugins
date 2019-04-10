@@ -16,12 +16,12 @@
 
 package co.cask.netezza;
 
-import co.cask.cdap.api.annotation.Description;
-import co.cask.cdap.api.annotation.Name;
-import co.cask.cdap.api.annotation.Plugin;
-import co.cask.cdap.etl.api.batch.PostAction;
 import co.cask.db.batch.action.AbstractQueryAction;
 import co.cask.db.batch.config.DBSpecificQueryActionConfig;
+import io.cdap.cdap.api.annotation.Description;
+import io.cdap.cdap.api.annotation.Name;
+import io.cdap.cdap.api.annotation.Plugin;
+import io.cdap.cdap.etl.api.batch.PostAction;
 
 /**
  * Represents Netezza post action.

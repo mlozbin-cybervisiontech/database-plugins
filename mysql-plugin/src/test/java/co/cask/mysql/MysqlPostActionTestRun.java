@@ -17,20 +17,20 @@
 package co.cask.mysql;
 
 import co.cask.ConnectionConfig;
-import co.cask.cdap.etl.api.batch.PostAction;
-import co.cask.cdap.etl.mock.batch.MockSink;
-import co.cask.cdap.etl.mock.batch.MockSource;
-import co.cask.cdap.etl.proto.v2.ETLBatchConfig;
-import co.cask.cdap.etl.proto.v2.ETLPlugin;
-import co.cask.cdap.etl.proto.v2.ETLStage;
-import co.cask.cdap.proto.artifact.AppRequest;
-import co.cask.cdap.proto.id.ApplicationId;
-import co.cask.cdap.proto.id.NamespaceId;
-import co.cask.cdap.test.ApplicationManager;
 import co.cask.db.batch.action.QueryActionConfig;
 import co.cask.db.batch.action.QueryConfig;
-import co.cask.hydrator.common.batch.action.Condition;
 import com.google.common.collect.ImmutableMap;
+import io.cdap.cdap.etl.api.batch.PostAction;
+import io.cdap.cdap.etl.mock.batch.MockSink;
+import io.cdap.cdap.etl.mock.batch.MockSource;
+import io.cdap.cdap.etl.proto.v2.ETLBatchConfig;
+import io.cdap.cdap.etl.proto.v2.ETLPlugin;
+import io.cdap.cdap.etl.proto.v2.ETLStage;
+import io.cdap.cdap.proto.artifact.AppRequest;
+import io.cdap.cdap.proto.id.ApplicationId;
+import io.cdap.cdap.proto.id.NamespaceId;
+import io.cdap.cdap.test.ApplicationManager;
+import io.cdap.plugin.common.batch.action.Condition;
 import org.junit.Assert;
 import org.junit.Test;
 

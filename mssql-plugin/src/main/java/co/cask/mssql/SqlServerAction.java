@@ -16,13 +16,13 @@
 
 package co.cask.mssql;
 
-import co.cask.cdap.api.annotation.Description;
-import co.cask.cdap.api.annotation.Name;
-import co.cask.cdap.api.annotation.Plugin;
-import co.cask.cdap.etl.api.action.Action;
 import co.cask.db.batch.action.AbstractDBAction;
 import co.cask.db.batch.config.DBSpecificQueryConfig;
 import com.google.common.collect.ImmutableMap;
+import io.cdap.cdap.api.annotation.Description;
+import io.cdap.cdap.api.annotation.Name;
+import io.cdap.cdap.api.annotation.Plugin;
+import io.cdap.cdap.etl.api.action.Action;
 
 import java.util.Map;
 import javax.annotation.Nullable;

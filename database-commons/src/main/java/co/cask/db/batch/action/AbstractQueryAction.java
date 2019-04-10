@@ -16,10 +16,10 @@
 
 package co.cask.db.batch.action;
 
-import co.cask.cdap.etl.api.PipelineConfigurer;
-import co.cask.cdap.etl.api.batch.BatchActionContext;
-import co.cask.cdap.etl.api.batch.PostAction;
 import co.cask.util.DBUtils;
+import io.cdap.cdap.etl.api.PipelineConfigurer;
+import io.cdap.cdap.etl.api.batch.BatchActionContext;
+import io.cdap.cdap.etl.api.batch.PostAction;
 
 import java.sql.Driver;
 

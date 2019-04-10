@@ -18,14 +18,14 @@ package co.cask.util;
 
 import co.cask.ConnectionConfig;
 import co.cask.JDBCDriverShim;
-import co.cask.cdap.api.data.schema.Schema;
-import co.cask.cdap.api.data.schema.UnsupportedTypeException;
-import co.cask.cdap.api.plugin.PluginProperties;
-import co.cask.cdap.etl.api.PipelineConfigurer;
-import co.cask.cdap.etl.api.validation.InvalidConfigPropertyException;
 import com.google.common.base.Preconditions;
 import com.google.common.base.Strings;
 import com.google.common.collect.Lists;
+import io.cdap.cdap.api.data.schema.Schema;
+import io.cdap.cdap.api.data.schema.UnsupportedTypeException;
+import io.cdap.cdap.api.plugin.PluginProperties;
+import io.cdap.cdap.etl.api.PipelineConfigurer;
+import io.cdap.cdap.etl.api.validation.InvalidConfigPropertyException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -16,11 +16,11 @@
 
 package co.cask.db.batch.action;
 
-import co.cask.cdap.api.annotation.Description;
-import co.cask.cdap.api.annotation.Macro;
-import co.cask.cdap.etl.api.batch.BatchActionContext;
-import co.cask.hydrator.common.batch.action.Condition;
-import co.cask.hydrator.common.batch.action.ConditionConfig;
+import io.cdap.cdap.api.annotation.Description;
+import io.cdap.cdap.api.annotation.Macro;
+import io.cdap.cdap.etl.api.batch.BatchActionContext;
+import io.cdap.plugin.common.batch.action.Condition;
+import io.cdap.plugin.common.batch.action.ConditionConfig;
 
 import javax.annotation.Nullable;
 

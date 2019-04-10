@@ -17,14 +17,14 @@
 package co.cask.oracle;
 
 import co.cask.DBRecord;
-import co.cask.cdap.api.annotation.Description;
-import co.cask.cdap.api.annotation.Name;
-import co.cask.cdap.api.annotation.Plugin;
-import co.cask.cdap.api.data.format.StructuredRecord;
-import co.cask.cdap.etl.api.batch.BatchSink;
 import co.cask.db.batch.config.DBSpecificSinkConfig;
 import co.cask.db.batch.sink.AbstractDBSink;
 import com.google.common.collect.ImmutableMap;
+import io.cdap.cdap.api.annotation.Description;
+import io.cdap.cdap.api.annotation.Name;
+import io.cdap.cdap.api.annotation.Plugin;
+import io.cdap.cdap.api.data.format.StructuredRecord;
+import io.cdap.cdap.etl.api.batch.BatchSink;
 
 import java.util.Map;
 import javax.annotation.Nullable;

@@ -16,14 +16,6 @@
 
 package co.cask;
 
-import co.cask.cdap.api.artifact.ArtifactSummary;
-import co.cask.cdap.api.data.schema.Schema;
-import co.cask.cdap.api.plugin.PluginClass;
-import co.cask.cdap.api.plugin.PluginPropertyField;
-import co.cask.cdap.datapipeline.DataPipelineApp;
-import co.cask.cdap.proto.id.ArtifactId;
-import co.cask.cdap.proto.id.NamespaceId;
-import co.cask.cdap.test.TestConfiguration;
 import co.cask.db.batch.DatabasePluginTestBase;
 import co.cask.db.batch.sink.ETLDBOutputFormat;
 import co.cask.db.batch.source.DataDrivenETLDBInputFormat;
@@ -34,6 +26,13 @@ import co.cask.jdbc.DatabaseSource;
 import com.google.common.base.Charsets;
 import com.google.common.base.Throwables;
 import com.google.common.collect.Sets;
+import io.cdap.cdap.api.artifact.ArtifactSummary;
+import io.cdap.cdap.api.data.schema.Schema;
+import io.cdap.cdap.api.plugin.PluginClass;
+import io.cdap.cdap.datapipeline.DataPipelineApp;
+import io.cdap.cdap.proto.id.ArtifactId;
+import io.cdap.cdap.proto.id.NamespaceId;
+import io.cdap.cdap.test.TestConfiguration;
 import org.hsqldb.Server;
 import org.hsqldb.jdbc.JDBCDriver;
 import org.junit.AfterClass;

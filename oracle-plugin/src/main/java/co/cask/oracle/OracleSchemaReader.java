@@ -17,8 +17,8 @@
 package co.cask.oracle;
 
 import co.cask.CommonSchemaReader;
-import co.cask.cdap.api.data.schema.Schema;
 import com.google.common.collect.ImmutableSet;
+import io.cdap.cdap.api.data.schema.Schema;
 
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;

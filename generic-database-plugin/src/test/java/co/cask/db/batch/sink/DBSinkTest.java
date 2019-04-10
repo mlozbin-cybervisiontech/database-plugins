@@ -17,13 +17,13 @@
 package co.cask.db.batch.sink;
 
 import co.cask.DBRecord;
-import co.cask.cdap.api.data.format.StructuredRecord;
-import co.cask.cdap.api.data.schema.Schema;
-import co.cask.cdap.api.dataset.lib.KeyValue;
-import co.cask.cdap.etl.mock.common.MockEmitter;
 import co.cask.jdbc.DatabaseSink;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps;
+import io.cdap.cdap.api.data.format.StructuredRecord;
+import io.cdap.cdap.api.data.schema.Schema;
+import io.cdap.cdap.api.dataset.lib.KeyValue;
+import io.cdap.cdap.etl.mock.common.MockEmitter;
 import org.apache.hadoop.io.NullWritable;
 import org.junit.Assert;
 import org.junit.Test;

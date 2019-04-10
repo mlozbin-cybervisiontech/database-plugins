@@ -17,13 +17,13 @@
 package co.cask.jdbc;
 
 import co.cask.ConnectionConfig;
-import co.cask.cdap.api.annotation.Description;
-import co.cask.cdap.api.annotation.Macro;
-import co.cask.cdap.api.annotation.Name;
-import co.cask.cdap.api.annotation.Plugin;
-import co.cask.cdap.etl.api.batch.PostAction;
 import co.cask.db.batch.action.AbstractQueryAction;
 import co.cask.db.batch.action.QueryActionConfig;
+import io.cdap.cdap.api.annotation.Description;
+import io.cdap.cdap.api.annotation.Macro;
+import io.cdap.cdap.api.annotation.Name;
+import io.cdap.cdap.api.annotation.Plugin;
+import io.cdap.cdap.etl.api.batch.PostAction;
 
 import javax.annotation.Nullable;
 

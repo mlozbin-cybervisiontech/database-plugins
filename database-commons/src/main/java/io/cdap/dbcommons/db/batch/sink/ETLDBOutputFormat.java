@@ -48,7 +48,7 @@ import java.util.Properties;
  * @param <V> - Value passed to this class to be written. The value is ignored.
  */
 public class ETLDBOutputFormat<K extends DBWritable, V> extends DBOutputFormat<K, V> {
-  public static final String AUTO_COMMIT_ENABLED = "co.cask.hydrator.db.output.autocommit.enabled";
+  public static final String AUTO_COMMIT_ENABLED = "io.cdap.hydrator.db.output.autocommit.enabled";
 
   private static final Logger LOG = LoggerFactory.getLogger(ETLDBOutputFormat.class);
   private Configuration conf;

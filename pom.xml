@@ -18,7 +18,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>co.cask</groupId>
+  <groupId>io.cdap.plugin</groupId>
   <artifactId>database-plugins</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
@@ -330,7 +330,7 @@
     <pluginManagement>
       <plugins>
         <plugin>
-          <groupId>co.cask</groupId>
+          <groupId>io.cdap.plugin</groupId>
           <artifactId>cdap-maven-plugin</artifactId>
           <version>1.0.1</version>
           <configuration>
@@ -547,7 +547,7 @@
               </links>
               <doctitle>${project.name} ${project.version}</doctitle>
               <bottom>
-                <![CDATA[Copyright &#169; {currentYear} <a href="http://co.cask.co" target="_blank">Cask Data, Inc.</a> Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License, Version 2.0</a>.]]>
+                <![CDATA[Copyright &#169; {currentYear} <a href="http://cdap.io" target="_blank">Cask Data, Inc.</a> Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License, Version 2.0</a>.]]>
               </bottom>
             </configuration>
             <executions>

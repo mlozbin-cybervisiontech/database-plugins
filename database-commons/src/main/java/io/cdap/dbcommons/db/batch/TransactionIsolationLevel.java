@@ -25,7 +25,7 @@ import javax.annotation.Nullable;
  * is needed primarily because the Connection class uses int constants, instead of Enums.
  */
 public final class TransactionIsolationLevel {
-  public static final String CONF_KEY = "co.cask.hydrator.db.plugin.transaction.isolation.level";
+  public static final String CONF_KEY = "io.cdap.hydrator.db.plugin.transaction.isolation.level";
 
   private TransactionIsolationLevel() {
   }

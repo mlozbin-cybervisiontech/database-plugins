@@ -31,7 +31,7 @@ public interface SchemaReader {
 
   /**
    *  Given the result set, get the metadata of the result set and return
-   *  list of {@link co.cask.cdap.api.data.schema.Schema.Field},
+   *  list of {@link io.cdap.cdap.api.data.schema.Schema.Field},
    *  where name of the field is same as column name and type of the field is obtained using
    *  {@link SchemaReader#getSchema(ResultSetMetaData, int)}
    * @param resultSet Sql query result set
@@ -43,7 +43,7 @@ public interface SchemaReader {
 
   /**
    * Given the result set, get the metadata of the result set and return
-   * list of {@link co.cask.cdap.api.data.schema.Schema.Field},
+   * list of {@link io.cdap.cdap.api.data.schema.Schema.Field},
    * where name of the field is same as column name and type of the field is obtained using
    * {@link SchemaReader#getSchema(ResultSetMetaData, int)}
    *

@@ -59,8 +59,8 @@ import javax.management.ReflectionException;
  */
 public final class DBUtils {
   private static final Logger LOG = LoggerFactory.getLogger(DBUtils.class);
-  public static final String OVERRIDE_SCHEMA = "co.cask.hydrator.db.override.schema";
-  public static final String CONNECTION_ARGUMENTS = "co.cask.hydrator.db.connection.arguments";
+  public static final String OVERRIDE_SCHEMA = "io.cdap.hydrator.db.override.schema";
+  public static final String CONNECTION_ARGUMENTS = "io.cdap.hydrator.db.connection.arguments";
 
   /**
    * Performs any Database related cleanup
@@ -108,7 +108,7 @@ public final class DBUtils {
 
   /**
    * Given the result set, get the metadata of the result set and return
-   * list of {@link co.cask.cdap.api.data.schema.Schema.Field},
+   * list of {@link io.cdap.cdap.api.data.schema.Schema.Field},
    * where name of the field is same as column name and type of the field is obtained using
    * {@link DBUtils#getSchema(int, int, int)}
    *
@@ -153,7 +153,7 @@ public final class DBUtils {
 
   /**
    * Given the result set, get the metadata of the result set and return
-   * list of {@link co.cask.cdap.api.data.schema.Schema.Field},
+   * list of {@link io.cdap.cdap.api.data.schema.Schema.Field},
    * where name of the field is same as column name and type of the field is obtained using
    * {@link DBUtils#getSchema(int, int, int)}
    *
